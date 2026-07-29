@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>good luck on the exam 🍀</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="sparkle-layer" aria-hidden="true"></div>
+
+<!-- ============ COVER ============ -->
+<section id="cover" role="button" tabindex="0" aria-label="Open your good luck card">
+  <div class="cover-inner">
+    <div class="cover-border"></div>
+    <canvas id="mascot-canvas" width="24" height="24"></canvas>
+    <h1 class="cover-title">a little luck<br>for your <span>cpa exam</span></h1>
+    <p class="cover-tap">✦ tap the clover to open ✦</p>
+    <div class="cover-border cover-border-bottom"></div>
+  </div>
+</section>
+
+<!-- ============ CARD ============ -->
+<main id="card" hidden>
+
+  <div class="garland" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">you are so close</p>
+    <h1 id="hero-title">you've got this,<br>future <span id="recipient-name">CPA</span>!</h1>
+    <p class="hero-sub" id="hero-sub">
+      Every late night studying, every practice question, every re-read of a
+      standard you didn't want to look at again &mdash; it all led here.
+      Walk in knowing you've already done the hard part.
+    </p>
+    <button id="bell-btn" class="pixel-btn">✦ sprinkle a little extra luck ✦</button>
+  </header>
+
+  <section class="notes-section">
+    <h2 class="section-title">a note, just for you</h2>
+    <div class="fortune-wrap">
+      <div class="fortune-card" id="fortune-card">
+        <p id="fortune-text">Loading a good thought…</p>
+      </div>
+      <button id="fortune-next" class="pixel-btn small">next note →</button>
+    </div>
+  </section>
+
+  <section class="garden-section">
+    <h2 class="section-title">the luck garden</h2>
+    <p class="garden-sub">every message someone leaves plants a new clover. water it with kindness.</p>
+
+    <div id="garden-grid" class="garden-grid"></div>
+
+    <form id="message-form" class="message-form">
+      <h3>plant your own good luck</h3>
+      <label>
+        your name
+        <input type="text" id="msg-name" maxlength="24" placeholder="a friend" required>
+      </label>
+      <label>
+        your message
+        <textarea id="msg-text" maxlength="220" rows="3" placeholder="you're going to do amazing..." required></textarea>
+      </label>
+      <button type="submit" class="pixel-btn">🍀 plant it</button>
+      <p class="form-note">saved right in this browser &mdash; it'll be here next time you visit.</p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="garland" aria-hidden="true"></div>
+    <p>coded with love &amp; clovers, just for you (｡•̀ᴗ-)✧</p>
+  </footer>
+</main>
+
+<div id="popover" class="popover" hidden>
+  <div class="popover-box">
+    <button id="popover-close" class="popover-close" aria-label="Close">×</button>
+    <p class="popover-name"></p>
+    <p class="popover-text"></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
