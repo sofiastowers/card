@@ -10,18 +10,18 @@ const CONFIG = {
     "knowing you've already done the hard part.",
   fortunes: [
     "You don't need to know everything. You just need to know enough, and you do.",
-    "Nerves mean you care. Let them sit next to you, not drive.",
+    "Nerves are good. They mean you care.",
     "You've passed harder days than this one already.",
     "Flag it, breathe, move on. You can come back to it.",
-    "The exam ends. Your knowledge doesn't.",
-    "You are not behind. You are exactly where your work brought you.",
+    "No matter what, you took it and that's more than some can say.",
+    "You are not behind. You are exactly where you're meant to be.",
     "One question does not decide the whole exam. Keep going.",
-    "You studied the hard way. That's the way that sticks.",
+    "You're going to diva slay this.",
   ],
   seedMessages: [
-    { name: "a friend", text: "You are going to walk out of there so relieved. Rooting for you!" },
-    { name: "a friend", text: "Remember to breathe between sections. You've got the knowledge already." },
-    { name: "a friend", text: "Future-you is already so proud of present-you for showing up." },
+    { name: "", text: "Rooting for you! You got this!" },
+    { name: "", text: "Remember to breathe. It's all going to be okay." },
+    { name: "", text: "Be easy on yourself. Freshman Lexi made it through college and she never thought she would. You are capable of doing this." },
   ],
 };
 
