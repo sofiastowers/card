@@ -15,13 +15,13 @@ const CONFIG = {
     "You can't control the score, but you can control how hard you try.",
     "No matter what, you took it. That's more than some can say.",
     "Everything will work out.",
-    "One question does not decide the whole exam. Keep going.",
+    "One question does not decide the whole exam.",
     "You're going to diva slay this.",
   ],
   seedMessages: [
     { name: "", text: "Rooting for you! You got this!" },
     { name: "", text: "Remember to breathe. It's all going to be okay." },
-    { name: "", text: "Be easy on yourself. Freshman Lexi made it through college and she never thought she would. You are capable of doing this." },
+    { name: "", text: "Be easy on yourself. Freshman you made it through college and she never thought she would. You are capable of doing this." },
   ],
 };
 
