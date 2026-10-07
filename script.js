@@ -1,6 +1,3 @@
-/* ============================================================
-   CONFIG — the only section you need to edit to personalize
-   ============================================================ */
 const CONFIG = {
   recipientName: "CPA",          // e.g. "Jess" -> "future Jess!" ... leave "CPA" for the generic version
   examLabel: "the exam",          // e.g. "FAR", "REG", "AUD", "the exam"
@@ -25,10 +22,7 @@ const CONFIG = {
   ],
 };
 
-/* ============================================================
-   pixel-art engine (tiny canvas, drawn pixel-by-pixel, then
-   scaled up crisp via CSS image-rendering: pixelated)
-   ============================================================ */
+
 const PALETTE = {
   dark:  "#3F5C3A",
   mid:   "#6B8E5A",
@@ -104,9 +98,7 @@ const CLOVER_VARIANTS = [
   { dark: "#3F5C3A", mid: "#7DA37A", light: "#E3EBD1", stem: "#4A6741" },
 ];
 
-/* ============================================================
-   boot: mascot, borders, ambient sparkles
-   ============================================================ */
+
 function initMascot() {
   const canvas = document.getElementById("mascot-canvas");
   drawClover(canvas.getContext("2d"), canvas.width, { face: true });
@@ -158,9 +150,7 @@ function burstSparkles(rect) {
   }
 }
 
-/* ============================================================
-   cover -> card transition
-   ============================================================ */
+
 function openCard() {
   const cover = document.getElementById("cover");
   const card = document.getElementById("card");
@@ -188,9 +178,7 @@ function initCover() {
   });
 }
 
-/* ============================================================
-   hero personalization
-   ============================================================ */
+
 function initHero() {
   document.getElementById("recipient-name").textContent = CONFIG.recipientName;
   document.getElementById("hero-sub").textContent = CONFIG.heroMessage;
@@ -199,9 +187,7 @@ function initHero() {
   });
 }
 
-/* ============================================================
-   fortune notes
-   ============================================================ */
+
 function initFortunes() {
   const textEl = document.getElementById("fortune-text");
   const nextBtn = document.getElementById("fortune-next");
@@ -224,9 +210,7 @@ function initFortunes() {
   showRandom();
 }
 
-/* ============================================================
-   luck garden (localStorage-backed guestbook)
-   ============================================================ */
+
 const STORAGE_KEY = "cpa-luck-garden-messages";
 
 function loadMessages() {
@@ -313,9 +297,7 @@ function initGarden() {
   });
 }
 
-/* ============================================================
-   boot
-   ============================================================ */
+
 document.addEventListener("DOMContentLoaded", () => {
   initMascot();
   initBorders();
